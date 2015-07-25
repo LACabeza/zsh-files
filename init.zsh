@@ -10,8 +10,8 @@ source $SOURCE/lib/history.zsh
 source $SOURCE/lib/key-bindings.zsh
 source $SOURCE/lib/misc.zsh
 source $SOURCE/lib/spectrum.zsh
-source $SOURCE/lib/termsupport.zsh
-source $SOURCE/lib/theme-and-appearance.zsh
+# source $SOURCE/lib/termsupport.zsh
+# source $SOURCE/lib/theme-and-appearance.zsh
 
 # Aliases
 source $SOURCE/aliases/aliases.zsh
