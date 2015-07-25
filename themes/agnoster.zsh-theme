@@ -27,6 +27,7 @@
 
 CURRENT_BG='NONE'
 PRIMARY_FG=default
+PRIMARY_BG=white
 
 # Characters
 SEGMENT_SEPARATOR="\ue0b0"
@@ -73,7 +74,7 @@ prompt_context() {
   local user=`whoami`
 
   if [[ "$user" != "$DEFAULT_USER" || -n "$SSH_CONNECTION" ]]; then
-    prompt_segment black default " %(!.%{%F{yellow}%}.)$user@%m "
+    prompt_segment black $PRIMARY_BG " %(!.%{%F{yellow}%}.)$user@%m "
   fi
 }
 
@@ -124,7 +125,7 @@ prompt_status() {
   [[ $UID -eq 0 ]] && symbols+="%{%F{yellow}%}$LIGHTNING"
   [[ $(jobs -l | wc -l) -gt 0 ]] && symbols+="%{%F{cyan}%}$GEAR"
 
-  [[ -n "$symbols" ]] && prompt_segment $PRIMARY_FG default " $symbols "
+  [[ -n "$symbols" ]] && prompt_segment $PRIMARY_BG $PRIMARY_FG " $symbols "
 }
 
 ## Main prompt
