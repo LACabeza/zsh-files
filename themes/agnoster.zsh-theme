@@ -36,6 +36,7 @@ DETACHED="\u27a6"
 CROSS="\u2718"
 LIGHTNING="\u26a1"
 GEAR="\u2699"
+GREATER="\u276F"
 
 # Begin a segment
 # Takes two arguments, background and foreground. Both can be omitted,
@@ -139,7 +140,7 @@ prompt_agnoster_main() {
 
 prompt_agnoster_precmd() {
   vcs_info
-  PROMPT='%{%f%b%k%}$(prompt_agnoster_main) '
+  PROMPT='%{%f%b%k%}$(prompt_agnoster_main)$(print -n "\n$GREATER") '
 }
 
 prompt_agnoster_setup() {
