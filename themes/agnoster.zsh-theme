@@ -26,7 +26,7 @@
 # A few utility functions to make it easy and re-usable to draw segmented prompts
 
 CURRENT_BG='NONE'
-PRIMARY_FG=WHITE
+PRIMARY_FG=default
 
 # Characters
 SEGMENT_SEPARATOR="\ue0b0"
@@ -72,7 +72,7 @@ prompt_context() {
   local user=`whoami`
 
   if [[ "$user" != "$DEFAULT_USER" || -n "$SSH_CONNECTION" ]]; then
-    prompt_segment $PRIMARY_FG default " %(!.%{%F{yellow}%}.)$user@%m "
+    prompt_segment black default " %(!.%{%F{yellow}%}.)$user@%m "
   fi
 }
 
