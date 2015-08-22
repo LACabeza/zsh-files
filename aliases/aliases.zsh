@@ -45,56 +45,5 @@ alias mkdirp='mkdir -p'
 #
 # User Specific Aliases
 #
-if [[ $USER == 'alysson' ]]; then
-    #
-	alias iphp="rlwrap -a php -a"
-fi
+alias iphp="rlwrap -a php -a"
 
-# OS X Aliases
-if [[ $CURRENT_OS == 'OS X' ]]; then
-    # Hidden files
-    alias showhiddenfiles='defaults write com.apple.finder AppleShowAllFiles TRUE && killall Finder'
-    alias hidehiddenfiles='defaults write com.apple.finder AppleShowAllFiles FALSE && killall Finder'
-
-    alias 'kb-disable'='sudo kextunload /System/Library/Extensions/AppleUSBTopCase.kext/Contents/PlugIns/AppleUSBTCKeyboard.kext/'
-    alias 'kb-enable'='sudo kextload /System/Library/Extensions/AppleUSBTopCase.kext/Contents/PlugIns/AppleUSBTCKeyboard.kext/'
-
-    #
-    # Application aliases
-    #
-    alias vine='open -a Vine\ Server'
-    alias ss='/System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app/Contents/MacOS/ScreenSaverEngine &'
-
-    # Open from command line
-    alias finder='open -a Finder '
-
-elif [[ $CURRENT_OS == 'Linux' ]]; then
-    #
-    # Global Linux
-    #
-
-    # Misc Aliases
-    alias ls='ls --color=auto'
-
-    # MVim == GVim on Linux
-    alias mvim='gvim'
-
-    # Extensions
-    alias -s html=$BROWSER
-    alias -s pdf=epdfview
-    alias -s txt=$EDITOR
-    alias -s text=$EDITOR
-
-    # Images
-    alias -s png=feh
-    alias -s jpeg=feh
-    alias -s jpg=feh
-    alias -s gif=feh
-
-    # Source Extensions
-    alias -s hs=$EDITOR
-    alias -s c=$EDITOR
-
-elif [[ $CURRENT_OS == 'Cygwin' ]]; then
-    alias py='/cygdrive/c/Python27/python'
-fi
