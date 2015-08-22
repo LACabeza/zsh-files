@@ -42,6 +42,14 @@ alias mkdirp='mkdir -p'
 # OS Specific Aliases
 #
 
+#
+# User Specific Aliases
+#
+if [[ $USER == 'alysson' ]]; then
+    #
+	alias iphp="rlwrap -a php -a"
+fi
+
 # OS X Aliases
 if [[ $CURRENT_OS == 'OS X' ]]; then
     # Hidden files
@@ -87,14 +95,6 @@ elif [[ $CURRENT_OS == 'Linux' ]]; then
     alias -s hs=$EDITOR
     alias -s c=$EDITOR
 
-    #
-    # User Specific Aliases
-    #
-    alias iphp="rlwrap -a php -a"
-
-    if [[ $USER == 'alysson' ]]; then
-        #
-    fi
 elif [[ $CURRENT_OS == 'Cygwin' ]]; then
     alias py='/cygdrive/c/Python27/python'
 fi
