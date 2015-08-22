@@ -90,6 +90,7 @@ elif [[ $CURRENT_OS == 'Linux' ]]; then
     #
     # User Specific Aliases
     #
+    alias iphp="rlwrap -a php -a"
 
     if [[ $USER == 'alysson' ]]; then
         #

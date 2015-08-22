@@ -27,6 +27,7 @@
 
 CURRENT_BG='NONE'
 PRIMARY_FG=default
+PRIMARY_BG=white
 
 # Characters
 SEGMENT_SEPARATOR="\ue0b0"
@@ -36,6 +37,7 @@ DETACHED="\u27a6"
 CROSS="\u2718"
 LIGHTNING="\u26a1"
 GEAR="\u2699"
+GREATER="\u276F"
 
 # Begin a segment
 # Takes two arguments, background and foreground. Both can be omitted,
@@ -72,7 +74,7 @@ prompt_context() {
   local user=`whoami`
 
   if [[ "$user" != "$DEFAULT_USER" || -n "$SSH_CONNECTION" ]]; then
-    prompt_segment black default " %(!.%{%F{yellow}%}.)$user@%m "
+    prompt_segment $PRIMARY_BG black " %(!.%{%F{red%}.)$user@%m "
   fi
 }
 
@@ -123,7 +125,7 @@ prompt_status() {
   [[ $UID -eq 0 ]] && symbols+="%{%F{yellow}%}$LIGHTNING"
   [[ $(jobs -l | wc -l) -gt 0 ]] && symbols+="%{%F{cyan}%}$GEAR"
 
-  [[ -n "$symbols" ]] && prompt_segment $PRIMARY_FG default " $symbols "
+  [[ -n "$symbols" ]] && prompt_segment black $PRIMARY_FG " $symbols "
 }
 
 ## Main prompt
@@ -139,7 +141,7 @@ prompt_agnoster_main() {
 
 prompt_agnoster_precmd() {
   vcs_info
-  PROMPT='%{%f%b%k%}$(prompt_agnoster_main) '
+  PROMPT='%{%f%b%k%}$(prompt_agnoster_main)$(print -n "\n$GREATER") '
 }
 
 prompt_agnoster_setup() {
