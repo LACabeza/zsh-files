@@ -3,20 +3,16 @@
 #
 
 # Builtin aliases
-alias la='ls -a'
-alias ll='ls -l'
-alias lla='ls -al'
+alias la='ls -lahF'
+alias ll='ls -lfF'
 
 # Some cd aliases
 alias back='cd -'
 
 # ......
-alias ..='cd ../'
-alias ...='cd ../../'
-alias ....='cd ../../../'
+alias ..='cd ..'
 
 alias .w='cd ~/ws'
-alias .s='cd /mnt/data/src'
 alias .d='cd /mnt/data'
 #
 alias .h='cd /home'
@@ -45,5 +41,4 @@ alias mkdirp='mkdir -p'
 #
 # User Specific Aliases
 #
-alias iphp="rlwrap -a php -a"
 
