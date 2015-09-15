@@ -14,6 +14,8 @@ alias ..='cd ..'
 
 alias .w='cd ~/ws'
 alias .d='cd /mnt/data'
+alias .flags='cd ~/ws/flags'
+alias .fclinico='cd ~/ws/fclinico'
 #
 alias .h='cd /home'
 alias .e='cd /etc'
