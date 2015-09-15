@@ -4,7 +4,7 @@
 
 # Builtin aliases
 alias la='ls -lahF'
-alias ll='ls -lfF'
+alias ll='ls -lhF'
 
 # Some cd aliases
 alias back='cd -'
