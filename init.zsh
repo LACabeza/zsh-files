@@ -5,7 +5,6 @@ SOURCE=${0%/*}
 source $SOURCE/lib/prompt.zsh
 source $SOURCE/lib/completion.zsh
 source $SOURCE/lib/git.zsh
-source $SOURCE/lib/grep.zsh
 source $SOURCE/lib/history.zsh
 source $SOURCE/lib/spectrum.zsh
 
