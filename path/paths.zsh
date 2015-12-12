@@ -3,6 +3,9 @@
 #
 if [[ `hostname` == 'lac' ]]; then
     # Home Linux
+
+    # Composer vendor bin path
+    export PATH=$PATH:~/.composer/vendor/bin/
     
     # Android SDK Tools
     # android_sdks=/mnt/data/src/android-sdks
