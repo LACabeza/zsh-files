@@ -2,6 +2,7 @@ SOURCE=${0%/*}
 
 # Lib
 
+source $SOURCE/lib/misc.zsh
 source $SOURCE/lib/completion.zsh
 source $SOURCE/lib/git.zsh
 source $SOURCE/lib/php.zsh
