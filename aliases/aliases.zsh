@@ -12,16 +12,16 @@ alias back='cd -'
 # ......
 alias ..='cd ..'
 
-alias .w='cd ~/ws'
 alias .d='cd /mnt/data'
-alias .flaggs='cd ~/ws/flaggs'
-alias .fclinico='cd ~/ws/fclinico'
-alias .darwin='cd ~/ws/darwin'
+alias .w='cd /mnt/data/ws'
+alias .flaggs='cd /mnt/data/ws/flaggs'
+alias .fclinico='cd /mnt/data/ws/fclinico'
+alias .darwin='cd /mnt/data/ws/darwin'
 #
 alias .h='cd /home'
 alias .e='cd /etc'
 alias .v='cd /var'
-alias .u='cd /usr/local'
+alias .u='cd ~/.local'
 alias .t='cd /tmp'
 
 alias rsed="sed -i 's/\r//g'"
