@@ -15,7 +15,7 @@ alias ..='cd ..'
 alias .d='cd /mnt/data'
 alias .w='cd /mnt/data/ws'
 alias .flaggs='cd /mnt/data/ws/flaggs'
-alias .fclinico='cd /mnt/data/ws/fclinico'
+alias .fclinico='cd /mnt/data/ws/practice/fclinico'
 alias .darwin='cd /mnt/data/ws/darwin'
 #
 alias .h='cd /home'
