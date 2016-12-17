@@ -1,3 +1,4 @@
+# See how to install here http://arteymix.github.io/2015/01/20/just-discovered-zsh
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
 HISTSIZE=1000
