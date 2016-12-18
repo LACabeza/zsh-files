@@ -3,8 +3,10 @@
 #
 
 # Builtin aliases
+alias l='ls -CF'
 alias la='ls -lahF'
 alias ll='ls -lhF'
+alias lm='ls -mQ'
 
 # Some cd aliases
 alias back='cd -'
