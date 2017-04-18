@@ -24,7 +24,10 @@ source $SOURCE/functions/functions.zsh
 source $SOURCE/path/paths.zsh
 
 # AWS completion
-source $SOURCE/completion/aws.zsh
+#source $SOURCE/completion/aws.zsh
+
+# WP completion
+source $SOURCE/completion/wp-completion.bash
 
 # Colors
 source $SOURCE/colors/config.zsh
