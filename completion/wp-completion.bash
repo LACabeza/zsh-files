@@ -1,4 +1,6 @@
 # bash completion for the `wp` command
+autoload bashcompinit
+bashcompinit
 
 _wp_complete() {
 	local OLD_IFS="$IFS"
