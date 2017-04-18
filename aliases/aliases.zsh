@@ -3,8 +3,10 @@
 #
 
 # Builtin aliases
+alias l='ls -CF'
 alias la='ls -lahF'
 alias ll='ls -lhF'
+alias lm='ls -mQ'
 
 # Some cd aliases
 alias back='cd -'
@@ -12,8 +14,8 @@ alias back='cd -'
 # ......
 alias ..='cd ..'
 
-alias .d='cd /mnt/data'
-alias .w='cd /mnt/data/ws'
+alias .d='cd /mnt/sda1'
+alias .w='cd /mnt/sda1/ws'
 alias .flaggs='cd /mnt/data/ws/flaggs'
 alias .fclinico='cd /mnt/data/ws/practice/fclinico'
 alias .darwin='cd /mnt/data/ws/darwin'
