@@ -13,19 +13,24 @@ alias back='cd -'
 
 # ......
 alias ..='cd ..'
-
-alias .d='cd /mnt/sda1'
-alias .w='cd /mnt/sda1/ws'
-alias .flaggs='cd /mnt/data/ws/flaggs'
-alias .fclinico='cd /mnt/data/ws/practice/fclinico'
-alias .darwin='cd /mnt/data/ws/darwin'
-#
 alias .h='cd /home'
 alias .e='cd /etc'
 alias .v='cd /var'
 alias .u='cd ~/.local'
 alias .t='cd /tmp'
 
+if [-d ~/ws]; then
+    alias .w='cd ~/wws'
+    alias .flaggs='cd ~/wws/flaggs'
+    alias .practice='cd ~/ws/practice'
+fi
+if [-d /mnt/sda1]; then
+    alias .d='cd /mnt/sda1'
+    alias .w='cd /mnt/sda1/ws'
+    alias .flaggs='cd /mnt/data/ws/flaggs'
+    alias .practice='cd ~/ws/practice'
+fi
+#
 alias rsed="sed -i 's/\r//g'"
 
 # ZSH Global Aliases

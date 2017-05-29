@@ -8,7 +8,7 @@ unsetopt beep
 bindkey -e
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
-zstyle :compinstall filename '/home/alysson/.zshrc'
+zstyle :compinstall filename '~/.zshrc'
 
 autoload -Uz compinit
 compinit
@@ -55,13 +55,3 @@ antigen theme LACabeza/bullet-train-oh-my-zsh-theme bullet-train
 
 # Load everything in
 antigen apply
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f /usr/local/share/google-cloud-sdk/path.zsh.inc ]; then
-  source '/usr/local/share/google-cloud-sdk/path.zsh.inc'
-fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f /usr/local/share/google-cloud-sdk/completion.zsh.inc ]; then
-  source '/usr/local/share/google-cloud-sdk/completion.zsh.inc'
-fi

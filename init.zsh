@@ -23,10 +23,9 @@ source $SOURCE/functions/functions.zsh
 # Paths
 source $SOURCE/path/paths.zsh
 
-# AWS completion
+# Completions
 #source $SOURCE/completion/aws.zsh
-
-# WP completion
+#source $SOURCE/completion/google-cloud-sdk.zsh
 source $SOURCE/completion/wp-completion.bash
 
 # Colors
