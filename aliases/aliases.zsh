@@ -20,8 +20,8 @@ alias .u='cd ~/.local'
 alias .t='cd /tmp'
 
 if [ -d ~/ws ]; then
-    alias .w='cd ~/wws'
-    alias .flaggs='cd ~/wws/flaggs'
+    alias .w='cd ~/ws'
+    alias .flaggs='cd ~/ws/flaggs'
     alias .practice='cd ~/ws/practice'
 fi
 if [ -d /mnt/sda1 ]; then
