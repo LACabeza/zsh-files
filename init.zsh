@@ -27,6 +27,7 @@ source $SOURCE/path/paths.zsh
 #source $SOURCE/completion/aws.zsh
 #source $SOURCE/completion/google-cloud-sdk.zsh
 source $SOURCE/completion/wp-completion.bash
+source $SOURCE/completion/cakephp.zsh
 
 # Colors
 source $SOURCE/colors/config.zsh

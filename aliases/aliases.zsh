@@ -34,6 +34,7 @@ fi
 alias rsed="sed -i 's/\r//g'"
 
 # ZSH Global Aliases
+alias -g q='exit'
 alias -g L='less'
 alias -g T='tail -20'
 alias -g NUL=' > /dev/null 2>&1'
