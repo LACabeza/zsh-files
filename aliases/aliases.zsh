@@ -31,9 +31,9 @@ if [ -d /mnt/sda1 ]; then
     alias .practice='cd ~/ws/practice'
 fi
 #
-alias rsed="sed -i 's/\r//g'"
 
 # ZSH Global Aliases
+alias -g q='exit'
 alias -g L='less'
 alias -g T='tail -20'
 alias -g NUL=' > /dev/null 2>&1'
@@ -51,4 +51,5 @@ alias mkdirp='mkdir -p'
 #
 # User Specific Aliases
 #
-
+alias bcake='./bin/cake'
+alias rsed="sed -i 's/\r//g'"

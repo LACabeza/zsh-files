@@ -80,5 +80,5 @@ mkcd() {
 }
 
 psgrep() {
-	ps up $(pgrep -f $@) 2>&-
+	ps -o pid,cmd -p $(pgrep -f $@) 2>&-
 }
