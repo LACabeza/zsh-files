@@ -48,7 +48,10 @@ BULLETTRAIN_CONTEXT_DEFAULT_USER=alysson
 BULLETTRAIN_CONTEXT_HOSTNAME=%M
 BULLETTRAIN_EXEC_TIME_SHOW=true
 BULLETTRAIN_GIT_COLORIZE_DIRTY=true
+BULLETTRAIN_GIT_PROMPT_CMD=\${\$(git_prompt_info)//\\//\ \ }
 BULLETTRAIN_HG_SHOW=false
+BULLETTRAIN_STATUS_BG=violet
+
 antigen theme LACabeza/bullet-train-oh-my-zsh-theme bullet-train
 
 ##antigen theme LACabeza/zsh-files themes/agnoster
