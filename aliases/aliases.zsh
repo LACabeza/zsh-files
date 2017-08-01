@@ -38,8 +38,7 @@ alias -g L='less'
 alias -g T='tail -20'
 alias -g NUL=' > /dev/null 2>&1'
 
-# I like to be safe...
-alias rm='rm -i'
+alias bcake='./bin/cake'
 
 # derp derp
 alias mkdirp='mkdir -p'
@@ -47,7 +46,7 @@ alias mkdirp='mkdir -p'
 #
 # OS Specific Aliases
 #
-
+alias suwww='sudo -u www-data'
 #
 # User Specific Aliases
 #
