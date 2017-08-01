@@ -52,3 +52,4 @@ alias suwww='sudo -u www-data'
 #
 alias bcake='./bin/cake'
 alias rsed="sed -i 's/\r//g'"
+alias suwww='sudo -u www-data'
