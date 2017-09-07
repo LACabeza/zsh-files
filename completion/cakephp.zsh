@@ -12,11 +12,11 @@ _cake()
 
     if [[ "$cur" == -* ]] ; then
         if [[ ${COMP_CWORD} = 1 ]] ; then
-            opts=$(${cake} Completion options)
+            opts=$(${cake} completion options)
         elif [[ ${COMP_CWORD} = 2 ]] ; then
-            opts=$(${cake} Completion options "${COMP_WORDS[1]}")
+            opts=$(${cake} completion options "${COMP_WORDS[1]}")
         else
-            opts=$(${cake} Completion options "${COMP_WORDS[1]}" "${COMP_WORDS[2]}")
+            opts=$(${cake} completion options "${COMP_WORDS[1]}" "${COMP_WORDS[2]}")
         fi
 
         COMPREPLY=( $(compgen -W "${opts}" -- ${cur}) )
@@ -24,13 +24,13 @@ _cake()
     fi
 
     if [[ ${COMP_CWORD} = 1 ]] ; then
-        opts=$(${cake} Completion commands)
+        opts=$(${cake} completion commands)
         COMPREPLY=( $(compgen -W "${opts}" -- ${cur}) )
         return 0
     fi
 
     if [[ ${COMP_CWORD} = 2 ]] ; then
-        opts=$(${cake} Completion subcommands $prev)
+        opts=$(${cake} completion subcommands $prev)
         COMPREPLY=( $(compgen -W "${opts}" -- ${cur}) )
         if [[ $COMPREPLY = "" ]] ; then
             __cake_filedir
@@ -39,7 +39,7 @@ _cake()
         return 0
     fi
 
-    opts=$(${cake} Completion fuzzy "${COMP_WORDS[@]:1}")
+    opts=$(${cake} completion fuzzy "${COMP_WORDS[@]:1}")
     COMPREPLY=( $(compgen -W "${opts}" -- ${cur}) )
     if [[ $COMPREPLY = "" ]] ; then
         __cake_filedir
