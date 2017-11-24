@@ -82,3 +82,12 @@ mkcd() {
 psgrep() {
 	ps -o pid,cmd -p $(pgrep -f $@) 2>&-
 }
+
+surl() {
+    curl -s -w 'Testing Website Response Time for :%{url_effective}
+        Lookup Time:\t\t%{time_namelookup}
+        Connect Time:\t\t%{time_connect}
+        Pre-transfer Time:\t%{time_pretransfer}
+        Start-transfer Time:\t%{time_starttransfer}
+        Total Time:\t\t%{time_total}\n' -o /dev/null $1
+}
