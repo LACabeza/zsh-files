@@ -5,6 +5,7 @@
 # Builtin aliases
 alias l='ls -CF'
 alias la='ls -lahF'
+alias lo='ls -ohAF'
 alias ll='ls -lhF'
 alias lm='ls -mQ'
 
